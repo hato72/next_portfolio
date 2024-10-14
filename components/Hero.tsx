@@ -15,7 +15,7 @@ export default function Hero() {
           新卒エンジニアを目指す<br />大学生のポートフォリオ
         </h1>
         <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto">
-          Webアプリ開発と大学での学びを通じて、技術力と創造性を磨いています。
+          Webアプリ開発と大学での学びを通じて、技術力を磨いています。
           未来のテクノロジーを創造する一員となるべく、日々精進しています。
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">

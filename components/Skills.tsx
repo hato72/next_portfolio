@@ -14,60 +14,53 @@ import {
 
 const skills = [
   { 
-    name: "HTML/CSS", 
-    level: 90,
-    years: 3,
-    experience: "レスポンシブデザイン、Flexbox、Grid、アニメーション",
-    projects: "複数の企業Webサイト、個人ブログテーマ"
-  },
-  { 
-    name: "JavaScript", 
-    level: 85,
-    years: 2.5,
-    experience: "ES6+、非同期処理、DOM操作、フレームワーク（React, Vue.js）",
-    projects: "SPAの開発、WebアプリケーションのフロントエンドUI実装"
-  },
-  { 
-    name: "React", 
-    level: 80,
-    years: 2,
-    experience: "Hooks、Context API、Redux、Next.js",
-    projects: "ECサイト、ダッシュボードアプリケーション"
-  },
-  { 
-    name: "Node.js", 
-    level: 75,
-    years: 1.5,
-    experience: "Express.js、RESTful API設計、データベース連携",
-    projects: "バックエンドAPIの開発、マイクロサービスの実装"
-  },
-  { 
     name: "Python", 
-    level: 70,
-    years: 2,
-    experience: "データ分析、機械学習（scikit-learn, TensorFlow）、Web スクレイピング",
-    projects: "感情分析ツール、株価予測モデル"
+    level: 85,
+    years: 2.8,
+    experience: "データ分析、機械学習（Pytorch, TensorFlow）、強化学習、Webスクレイピング、API開発",
+    projects: "Difyを使用したアプリケーション,Mediapipe-Game,強化学習AI,姿勢推定"
   },
   { 
-    name: "Git", 
-    level: 85,
-    years: 3,
-    experience: "バージョン管理、ブランチ戦略、GitHub/GitLab",
-    projects: "全てのプロジェクトでバージョン管理に使用"
+    name: "TypeScript", 
+    level: 70,
+    years: 0.5,
+    experience: "Webアプリケーションのフロントエンド実装、フレームワーク（React,Vue.js,Next.js）",
+    projects: "Vtuberdule,CookMeet,Difyを使用したアプリケーション"
+  },
+  { 
+    name: "Go", 
+    level: 65,
+    years: 1,
+    experience: "バックエンドAPIの開発",
+    projects: "CookMeet"
+  },
+  { 
+    name: "Java", 
+    level: 55,
+    years: 1.2,
+    experience: "ネットワークプログラミング",
+    projects: "2Dゲームの開発、常磐線の電車案内システムの開発"
+  },
+  { 
+    name: "C/C++", 
+    level: 40,
+    years: 1,
+    experience: "アルゴリズム、構文解析、ゲーム開発",
+    projects: "物理シミュレーションプログラム、3Dゲームの開発"
   },
   { 
     name: "SQL", 
     level: 65,
-    years: 1.5,
-    experience: "クエリ最適化、インデックス設計、トランザクション管理",
-    projects: "データベース設計、複雑なクエリの作成"
+    years: 0.5,
+    experience: "CRUD操作、データベース設計",
+    projects: "CookMeet"
   },
   { 
     name: "Docker", 
     level: 60,
     years: 1,
-    experience: "コンテナ化、Docker Compose、基本的なオーケストレーション",
-    projects: "開発環境の標準化、マイクロサービスのデプロイ"
+    experience: "コンテナ化、Docker Compose",
+    projects: "CookMeet"
   }
 ]
 

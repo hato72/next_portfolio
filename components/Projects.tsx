@@ -15,22 +15,34 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const projects = [
   {
-    title: "タスク管理アプリ",
-    description: "React と Firebase を使用した、リアルタイムで同期するタスク管理アプリケーション。",
-    technologies: ["React", "Firebase", "Material-UI"],
-    link: "https://github.com/yourusername/task-manager"
+    title: "CookMeet",
+    description: "質問に答えていくと、その答えに合ったレシピをおすすめしてくれるアプリ",
+    technologies: ["TypeScript", "Next.js", "Go","Docker","PostgreSQL"],
+    link: "https://github.com/hato72/CookMeet"
   },
   {
-    title: "天気予報 Bot",
-    description: "LINE Messaging API を利用した、毎日の天気予報を通知する LINE Bot。",
-    technologies: ["Node.js", "Express", "LINE Messaging API"],
-    link: "https://github.com/yourusername/weather-bot"
+    title: "Vtuberdule",
+    description: "Vtuberの配信状況や配信予定を一覧で見れるアプリ",
+    technologies: ["TypeScript", "Next.js"],
+    link: "https://github.com/hato72/Vtuberdule"
   },
   {
-    title: "ポートフォリオサイト",
-    description: "Next.js と Tailwind CSS を使用した、レスポンシブデザインのポートフォリオサイト。",
-    technologies: ["Next.js", "Tailwind CSS", "Vercel"],
-    link: "https://github.com/yourusername/portfolio"
+    title: "もぐらたたきゲーム",
+    description: "姿勢推定ライブラリであるMediapipeとPythonのゲームライブラリであるPygameを使用して作成したもぐらたたきゲーム",
+    technologies: ["Python"],
+    link: "https://github.com/hato72/Mediapipe-Game"
+  },
+  {
+    title: "Difyを用いて作成した検索アプリ",
+    description: "DifyのAPIを使用して、ユーザーが入力したキーワードに関連する情報を検索するアプリ",
+    technologies: ["Next.js", "Dify","Python","GCP","Docker","Github actions"],
+    link: "https://github.com/hato72/dify_search"
+  },
+  {
+    title: "動画から姿勢推定を行うアプリ",
+    description: "動画から姿勢推定を行い、姿勢の角度や脚の角度を可視化するアプリ",
+    technologies: ["Next.js","Python"],
+    link: "https://github.com/hato72/pose_Analysis_video"
   }
 ]
 
