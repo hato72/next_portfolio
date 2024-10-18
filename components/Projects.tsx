@@ -16,7 +16,7 @@ import { motion, AnimatePresence } from "framer-motion"
 const projects = [
   {
     title: "CookMeet",
-    description: "質問に答えていくと、その答えに合ったレシピをおすすめしてくれるアプリ",
+    description: "簡単な質問に答えていくと、AIが答えに合ったレシピをおすすめしてくれるアプリ",
     technologies: ["TypeScript", "Next.js", "Go","Docker","PostgreSQL"],
     link: "https://github.com/hato72/CookMeet"
   },
@@ -43,7 +43,51 @@ const projects = [
     description: "動画から姿勢推定を行い、姿勢の角度や脚の角度を可視化するアプリ",
     technologies: ["Next.js","Python"],
     link: "https://github.com/hato72/pose_Analysis_video"
-  }
+  },
+  {
+    title: "常磐線の電車案内システムの開発",
+    description: "出発時間や到着時間、駅名を入力すると常磐線内で最も効率的な経路が提示されるGUIアプリ",
+    technologies: ["Java"],
+    link: "https://github.com/hato72/IS_project"
+  },
+  {
+    title: "2Dタイルベースゲーム",
+    description: "彦星をキーボード操作し、2Dタイル上の障害物を避けて織姫がいるゴールを目指すゲーム",
+    technologies: ["Java"],
+    link: "https://github.com/hato72/javafx2"
+  },
+  {
+    title: "スプラトゥーン3の武器ランダムDiscordbot",
+    description: "スプラトゥーン3で大人数で武器をランダムにして遊ぶ際などに、それぞれにランダムな武器を割り当てることができるDiscordbot",
+    technologies: ["Python"],
+    link: "https://github.com/hato72/Discordbot"
+  },
+  {
+    title: "2Dゲーム風ポートフォリオ",
+    description: "2Dゲーム風に自己紹介を行うポートフォリオサイト",
+    technologies: ["JavaScript"],
+    link: "https://github.com/hato72/portfolio_game"
+  },
+  {
+    title: "Yatter",
+    description: "Twitterに似たAndroidアプリ",
+    technologies: ["Kotlin"],
+    link: "https://github.com/hato72/Yatter2024-Internship"
+  },
+  {
+    title: "強化学習モデルの実装",
+    description: "蛇ブロックが餌ブロックにたどり着くまでの最適な経路を学習していく強化学習モデル",
+    technologies: ["Python"],
+    link: "https://github.com/hato72/python_ai"
+  },
+  {
+    title: "顔認証システム",
+    description: "顔認証を用いたユーザー登録/ログイン機能を実装したシステム",
+    technologies: ["Python","Next.js"],
+    link: "https://github.com/hato72/face_recognition"
+  },
+
+
 ]
 
 export default function Projects() {

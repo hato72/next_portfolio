@@ -22,28 +22,28 @@ const skills = [
   },
   { 
     name: "TypeScript", 
-    level: 70,
+    level: 75,
     years: 0.5,
     experience: "Webアプリケーションのフロントエンド実装、フレームワーク（React,Vue.js,Next.js）",
     projects: "Vtuberdule,CookMeet,Difyを使用したアプリケーション"
   },
   { 
     name: "Go", 
-    level: 65,
+    level: 70,
     years: 1,
     experience: "バックエンドAPIの開発",
     projects: "CookMeet"
   },
   { 
     name: "Java", 
-    level: 55,
+    level: 60,
     years: 1.2,
     experience: "ネットワークプログラミング",
     projects: "2Dゲームの開発、常磐線の電車案内システムの開発"
   },
   { 
     name: "C/C++", 
-    level: 40,
+    level: 50,
     years: 1,
     experience: "アルゴリズム、構文解析、ゲーム開発",
     projects: "物理シミュレーションプログラム、3Dゲームの開発"
@@ -76,7 +76,7 @@ export default function Skills() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        スキル
+        主な開発スキル
       </motion.h2>
       <motion.p
         className="text-center text-sm text-muted-foreground mb-12"
