@@ -52,7 +52,7 @@ export default function Header() {
             {[
               { name: 'プロジェクト', id: 'projects' },
               { name: 'スキル', id: 'skills' },
-              { name: '学歴', id: 'education' }
+              { name: '基本情報', id: 'basic-info' }
             ].map((item, index) => (
               <motion.button
                 key={item.name}

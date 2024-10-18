@@ -50,6 +50,9 @@
 }
 
 @layer base {
+  html {
+    font-size: 22px;
+  }
   * {
     @apply border-border;
   }

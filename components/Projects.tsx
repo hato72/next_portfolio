@@ -120,13 +120,13 @@ export default function Projects() {
             >
 
               <CardHeader>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
+                <CardTitle className="text-xl">{project.title}</CardTitle>
+                <CardDescription className="text-base">{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary">{tech}</Badge>
+                    <Badge key={techIndex} variant="secondary" className="text-sm">{tech}</Badge>
                   ))}
                 </div>
               </CardContent>
