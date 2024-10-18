@@ -2,7 +2,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
-import Education from '../components/Education';
+import BasicInfo from '../components/BasicInfo';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <Skills />
-        <Education />
+        <BasicInfo />
       </main>
       <Footer />
     </div>
