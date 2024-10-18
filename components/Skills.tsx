@@ -11,53 +11,54 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { cn } from "@/lib/utils"
 
 const skills = [
   { 
     name: "Python", 
-    level: 85,
+    level: 4,
     years: 2.8,
     experience: "データ分析、機械学習（Pytorch, TensorFlow）、強化学習、Webスクレイピング、API開発",
     projects: "Difyを使用したアプリケーション,Mediapipe-Game,強化学習AI,姿勢推定"
   },
   { 
     name: "TypeScript", 
-    level: 75,
+    level: 3,
     years: 0.5,
     experience: "Webアプリケーションのフロントエンド実装、フレームワーク（React,Vue.js,Next.js）",
     projects: "Vtuberdule,CookMeet,Difyを使用したアプリケーション"
   },
   { 
     name: "Go", 
-    level: 70,
+    level: 3,
     years: 1,
     experience: "バックエンドAPIの開発",
     projects: "CookMeet"
   },
   { 
     name: "Java", 
-    level: 60,
+    level: 3,
     years: 1.2,
     experience: "ネットワークプログラミング",
     projects: "2Dゲームの開発、常磐線の電車案内システムの開発"
   },
   { 
     name: "C/C++", 
-    level: 50,
+    level: 2,
     years: 1,
     experience: "アルゴリズム、構文解析、ゲーム開発",
     projects: "物理シミュレーションプログラム、3Dゲームの開発"
   },
   { 
     name: "SQL", 
-    level: 65,
+    level: 3,
     years: 0.5,
     experience: "CRUD操作、データベース設計",
     projects: "CookMeet"
   },
   { 
     name: "Docker", 
-    level: 60,
+    level: 3,
     years: 1,
     experience: "コンテナ化、Docker Compose",
     projects: "CookMeet"
@@ -79,7 +80,7 @@ export default function Skills() {
         主な開発スキル
       </motion.h2>
       <motion.p
-        className="text-center text-sm text-muted-foreground mb-12"
+        className="text-center text-sm text-muted-foreground mb-4"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -87,6 +88,37 @@ export default function Skills() {
       >
         各スキルをクリックして詳細を確認
       </motion.p>
+      <motion.div
+        className="text-center text-sm text-muted-foreground mb-12 max-w-2xl mx-auto"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+      >
+        {[1, 2, 3, 4].map((level) => (
+          <div key={level} className="flex items-center mb-2">
+            <div className="flex space-x-1 mr-2 w-16 justify-end">
+              {[1, 2, 3, 4].map((block) => (
+                <div
+                  key={block}
+                  className={cn(
+                    "w-3 h-3 border border-primary rounded",
+                    block <= level ? "bg-primary" : "bg-transparent"
+                  )}
+                />
+              ))}
+            </div>
+            <p className="text-left flex-1 text-base">
+              {level}: {
+                level === 1 ? "授業などで触ったことがある" :
+                level === 2 ? "参考書やWeb等のリファレンスがあれば使用できる" :
+                level === 3 ? "参考書やWeb等のリファレンスがなくても使用できる" :
+                "実務に近いレベルで使用できる"
+              }
+            </p>
+          </div>
+        ))}
+      </motion.div>
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
         {skills.map((skill, index) => (
           <Dialog key={index}>
@@ -100,11 +132,18 @@ export default function Skills() {
               >
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="text-xl font-semibold">{skill.name}</h3>
-                  <span className="text-sm font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">
-                    {skill.level}%
-                  </span>
+                  <div className="flex space-x-1">
+                    {[1, 2, 3, 4].map((level) => (
+                      <div
+                        key={level}
+                        className={cn(
+                          "w-4 h-4 border border-primary rounded",
+                          level <= skill.level ? "bg-primary" : "bg-transparent"
+                        )}
+                      />
+                    ))}
+                  </div>
                 </div>
-                {/* <Progress value={skill.level} className="h-2" /> */}
               </motion.div> 
             </DialogTrigger>
             <DialogContent className="sm:max-w-[425px]">
