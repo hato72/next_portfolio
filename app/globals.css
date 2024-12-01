@@ -93,3 +93,9 @@
 .glow:hover {
   box-shadow: 0 0 20px rgba(var(--primary), 0.3);
 }
+
+.modal-large {
+  width: 80vw; /* 画面幅 */
+  max-width: 80vw;
+  max-height: 80vh; /* 画面高さ */
+}
