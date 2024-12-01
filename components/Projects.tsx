@@ -36,6 +36,13 @@ const projects = [
     type: "個人開発"
   },
   {
+    title: "常磐線の電車案内システムの開発",
+    description: "出発時間や到着時間、駅名を入力すると常磐線内で最も効率的な経路が提示されるGUIアプリ",
+    technologies: ["Java"],
+    link: "https://github.com/hato72/IS_project",
+    type: "チーム開発"
+  },
+  {
     title: "Difyを用いて作成した検索アプリ",
     description: "DifyのAPIを使用して、ユーザーが入力したキーワードに関連する情報を検索するアプリ",
     technologies: ["TypeScript","Next.js", "Dify","Python","GCP(Cloud run)","Docker"],
@@ -43,18 +50,25 @@ const projects = [
     type: "個人開発"
   },
   {
+    title: "へらでんくん",
+    description: "家庭の電力消費量や電気代をリアルタイムに監視するWebアプリ",
+    technologies: ["TypeScript","React","Dify","Python","Flask"],
+    link: "https://github.com/hato72/heradenkun",
+    type: "チーム開発"
+  },
+  {
+    title: "cookjump",
+    description: "自炊初心者を対象に、料理のチュートリアル形式で3日分のレシピや必要な食材、調理道具などを提示するWebアプリ",
+    technologies: ["TypeScript","Next.js"],
+    link: "https://github.com/hato72/cookjump",
+    type: "チーム開発"
+  },
+  {
     title: "動画から姿勢推定を行うアプリ",
     description: "動画から姿勢推定を行い、姿勢の角度や脚の角度を可視化するアプリ",
     technologies: ["TypeScript","Next.js","Python","MediaPipe"],
     link: "https://github.com/hato72/pose_Analysis_video",
     type: "個人開発"
-  },
-  {
-    title: "常磐線の電車案内システムの開発",
-    description: "出発時間や到着時間、駅名を入力すると常磐線内で最も効率的な経路が提示されるGUIアプリ",
-    technologies: ["Java"],
-    link: "https://github.com/hato72/IS_project",
-    type: "チーム開発"
   },
   {
     title: "2Dタイルベースゲーム",

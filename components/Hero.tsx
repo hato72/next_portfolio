@@ -12,11 +12,10 @@ export default function Hero() {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
-          新卒エンジニアを目指す<br />大学生のポートフォリオ
+          新卒でエンジニアを目指す<br />服部航大のポートフォリオ
         </h1>
         <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto">
-          Webアプリ開発と大学での学びを通じて、技術力を磨いています。
-          未来のテクノロジーを創造する一員となるべく、日々精進しています。
+          Webアプリケーション開発や、AI・機械学習・画像認識技術等を用いた開発を通じて技術を磨いています。
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <Button asChild className="rounded-full group relative overflow-hidden">

@@ -24,15 +24,15 @@ const skills = [
   { 
     name: "TypeScript", 
     level: 3,
-    years: 0.5,
+    years: 1,
     experience: "Webアプリケーションのフロントエンド実装、フレームワーク（React,Vue.js,Next.js）",
-    projects: "Vtuberdule,CookMeet,Difyを使用したアプリケーション"
+    projects: "Vtuberdule,CookMeet,Difyを使用したWebアプリ、へらでんくん、cookjump"
   },
   { 
     name: "Go", 
     level: 3,
     years: 1,
-    experience: "バックエンドAPIの開発",
+    experience: "バックエンドAPIの開発、クリーンアーキテクチャ",
     projects: "CookMeet"
   },
   { 
