@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {
   Card,
   CardContent,
@@ -21,10 +21,9 @@ const projects = [
     technologies: ["TypeScript", "Next.js", "Go","Docker","Supabase","PostgreSQL"],
     link: "https://github.com/hato72/CookMeet",
     type: "チーム開発",
-    demo_link:"",
     video:[
-      "https://drive.google.com/file/d/1L8JsU_FcsA0JaRtv5tkti12rG_ly9EEe/preview",
-      "https://drive.google.com/file/d/1SjmfFs9iQ_2A-BEr94Wnj4JVdCtln6xa/preview"
+      "https://drive.google.com/file/d/1L8JsU_FcsA0JaRtv5tkti12rG_ly9EEe/preview",//AI推論以外
+      "https://drive.google.com/file/d/1SjmfFs9iQ_2A-BEr94Wnj4JVdCtln6xa/preview"//AI推論
     ]
   },
   {
@@ -33,7 +32,6 @@ const projects = [
     technologies: ["TypeScript", "Next.js"],
     link: "https://github.com/hato72/Vtuberdule",
     type: "個人開発",
-    demo_link:"",
     video:"https://drive.google.com/file/d/1KLCrtyJ3dqMi3pXfyomGmsaRGoA8dUJO/preview"
   },
   {
@@ -42,7 +40,6 @@ const projects = [
     technologies: ["Python","MediaPipe","Pygame"],
     link: "https://github.com/hato72/Mediapipe-Game",
     type: "個人開発",
-    demo_link:"",
     video:"https://drive.google.com/file/d/18pTfchcrfAdixSi72pzEjDutpbIWeYhg/preview"
   },
   {
@@ -51,7 +48,6 @@ const projects = [
     technologies: ["Java"],
     link: "https://github.com/hato72/IS_project",
     type: "チーム開発",
-    demo_link:"",
     video:""
   },
   {
@@ -60,8 +56,7 @@ const projects = [
     technologies: ["TypeScript","Next.js", "Dify","Python","GCP(Cloud run)","Docker"],
     link: "https://github.com/hato72/dify_search",
     type: "個人開発",
-    demo_link:"",
-    video:""
+    video:"https://drive.google.com/file/d/1FhKKspxUaf-lco0a6IYF8SgpLXcYosOM/preview"
   },
   {
     title: "へらでんくん",
@@ -69,7 +64,6 @@ const projects = [
     technologies: ["TypeScript","React","Dify","Python","Flask"],
     link: "https://github.com/hato72/heradenkun",
     type: "チーム開発",
-    demo_link:"",
     video:"https://drive.google.com/file/d/1soLL6KKTv8nc0W3l6fdCyCmh0JkbqBHo/preview"
   },
   {
@@ -78,7 +72,6 @@ const projects = [
     technologies: ["TypeScript","Next.js"],
     link: "https://github.com/hato72/cookjump",
     type: "チーム開発",
-    demo_link:"",
     video:"https://drive.google.com/file/d/1L4nHrayoPp5JeOiPg7KZ-R7rvHR_2TkJ/preview"
   },
   {
@@ -87,7 +80,6 @@ const projects = [
     technologies: ["TypeScript","Next.js","Python","MediaPipe"],
     link: "https://github.com/hato72/pose_Analysis_video",
     type: "個人開発",
-    demo_link:"",
     video:""
   },
   {
@@ -96,7 +88,6 @@ const projects = [
     technologies: ["Java"],
     link: "https://github.com/hato72/javafx2",
     type: "個人開発",
-    demo_link:"",
     video:"https://drive.google.com/file/d/1wjMYWfZUTCqbHwFhcltI8PsbC8LUtzqY/preview"
   },
   {
@@ -105,8 +96,10 @@ const projects = [
     technologies: ["Python","Pygame"],
     link: "https://github.com/hato72/python_ai",
     type: "個人開発",
-    demo_link:"",
-    video:""
+    video:[
+      "https://drive.google.com/file/d/1KUhO2JENSPaeDNMcB72xQ8qwceGXkUzi/preview",//開始直後
+      "https://drive.google.com/file/d/1vbHpFrw3FoEzSJcLdR2i7iKrKETi4vBs/preview"//一定時間経過後
+    ]
   },
   {
     title: "スプラトゥーン3の武器ランダムDiscordbot",
@@ -114,7 +107,6 @@ const projects = [
     technologies: ["Python"],
     link: "https://github.com/hato72/Discordbot",
     type: "個人開発",
-    demo_link:"",
     video:""
   },
   {
@@ -123,7 +115,6 @@ const projects = [
     technologies: ["Kotlin"],
     link: "https://github.com/hato72/Yatter2024-Internship",
     type: "個人開発",
-    demo_link:"",
     video:"https://drive.google.com/file/d/1ah2nDrvkwYEBAwMfBFA0zlVgMo8YutYC/preview"
   },
   {
@@ -132,7 +123,6 @@ const projects = [
     technologies: ["Python","Next.js"],
     link: "https://github.com/hato72/face_recognition",
     type: "個人開発",
-    demo_link:"",
     video:""
   },
   {
@@ -141,17 +131,15 @@ const projects = [
     technologies: ["JavaScript"],
     link: "https://github.com/hato72/portfolio_game",
     type: "個人開発",
-    demo_link:"",
     video:""
   },
-
-
 ]
 
 export default function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const [openDialog, setOpenDialog] = useState<number | null>(null);
   const [open, setOpen] = useState(-1);
+  const [openDialogs, setOpenDialogs] = useState<boolean[]>([]);
 
   const handlePrev = () => {
     setOpen((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
@@ -160,6 +148,10 @@ export default function Projects() {
   const handleNext = () => {
     setOpen((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
   };
+
+  useEffect(() => {
+    setOpenDialogs(Array(projects.length).fill(false));
+  }, []);
 
   return (
     <section id="projects" className="py-24">
@@ -205,32 +197,41 @@ export default function Projects() {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full rounded-full group relative overflow-hidden">
-                  <motion.a 
-                    href={project.link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="relative z-10"
-                  >
-                    GitHubを見る
-                    <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                  </motion.a>
-                </Button>
-                {/* <Button asChild className="w-full rounded-full group relative overflow-hidden">
-                  <motion.a 
-                    href={project.demo_link} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="relative z-10"
-                  >
-                    デモ動画を見る
-                    <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                  </motion.a>
-                </Button> */}
+                <>
+                  <Button asChild className="w-full rounded-full group relative overflow-hidden">
+                    <motion.a 
+                      href={project.link} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="relative z-10"
+                      onClick={(e) => e.stopPropagation()} // クリックイベントの伝播を停止
+                    >
+                      GitHubを見る
+                      <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                    </motion.a>
+                  </Button>
+                  {project.video && (
+                    <Button asChild className="w-full rounded-full group relative overflow-hidden">
+                    <motion.a 
+                      onClick={() => setOpenDialogs(prev => {
+                        const next = [...prev];
+                        next[index] = !next[index];
+                        return next;
+                      })}
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="relative z-10"
+                    >
+                      デモ動画を見る
+                      <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                    </motion.a>
+                  </Button>
+                  )}
+                </>
               </CardFooter>
               <AnimatePresence>
                 {hoveredIndex === index && (
