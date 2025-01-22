@@ -18,21 +18,21 @@ const skills = [
     name: "Python", 
     level: 4,
     years: 2.8,
-    experience: "データ分析、機械学習（Pytorch, TensorFlow）、強化学習、Webスクレイピング、API開発",
-    projects: "Difyを使用したアプリケーション,Mediapipe-Game,強化学習AI,姿勢推定"
+    experience: "API開発(Flask、Django)、データ分析、機械学習（Pytorch、TensorFlowなど）、強化学習(Q学習)、Webスクレイピング(BeautifulSoup)",
+    projects: "姿勢推定を用いた研究活動、Difyを使用したアプリケーション、Mediapipe-Game、強化学習AI"
   },
   { 
     name: "TypeScript", 
     level: 3,
-    years: 1,
-    experience: "Webアプリケーションのフロントエンド実装、フレームワーク（React,Vue.js,Next.js）",
-    projects: "Vtuberdule,CookMeet,Difyを使用したWebアプリ、へらでんくん、cookjump"
+    years: 0.8,
+    experience: "Webアプリケーションのフロントエンド実装、フレームワーク（Next.js、React、Vue.js、Node.js）",
+    projects: "Vtuberdule、CookMeet、Difyを使用したWebアプリ、へらでんくん、cookjump"
   },
   { 
     name: "Go", 
     level: 3,
     years: 1,
-    experience: "バックエンドAPIの開発、クリーンアーキテクチャ",
+    experience: "バックエンドAPIの開発(Gin、Echo)、クリーンアーキテクチャ",
     projects: "CookMeet"
   },
   { 
@@ -43,11 +43,25 @@ const skills = [
     projects: "2Dゲームの開発、常磐線の電車案内システムの開発"
   },
   { 
-    name: "C/C++", 
+    name: "C/C++,C#", 
     level: 2,
     years: 1,
     experience: "アルゴリズム、構文解析、ゲーム開発",
-    projects: "物理シミュレーションプログラム、3Dゲームの開発"
+    projects: "2D物理シミュレーションプログラム、3Dゲームの開発、ポケットモンスターのバトルシーンの実装"
+  },
+  { 
+    name: "Flutter(Dart)", 
+    level: 2,
+    years: 0.4,
+    experience: "Webアプリケーションのフロントエンド実装",
+    projects: ""
+  },
+  { 
+    name: "Kotlin", 
+    level: 2,
+    years: 0.1,
+    experience: "Androidアプリケーションの実装",
+    projects: "Yatter(Twitterクローン)"
   },
   { 
     name: "SQL", 
@@ -62,6 +76,13 @@ const skills = [
     years: 1,
     experience: "コンテナ化、Docker Compose",
     projects: "CookMeet"
+  },
+  { 
+    name: "AWS", 
+    level: 2,
+    years: 0.1,
+    experience: "Lambda、API Gateway、Secret Manager、SAM、AuroraDB",
+    projects: "インターンシップ"
   }
 ]
 
