@@ -24,7 +24,9 @@ const projects = [
     video:[
       "https://drive.google.com/file/d/1L8JsU_FcsA0JaRtv5tkti12rG_ly9EEe/preview",//AI推論以外
       "https://drive.google.com/file/d/1SjmfFs9iQ_2A-BEr94Wnj4JVdCtln6xa/preview"//AI推論
-    ]
+    ],
+    app_url: "https://cook-meet.vercel.app",
+    document:""
   },
   {
     title: "Vtuberdule",
@@ -32,7 +34,9 @@ const projects = [
     technologies: ["TypeScript", "Next.js"],
     link: "https://github.com/hato72/Vtuberdule",
     type: "個人開発",
-    video:"https://drive.google.com/file/d/1KLCrtyJ3dqMi3pXfyomGmsaRGoA8dUJO/preview"
+    video:"https://drive.google.com/file/d/1KLCrtyJ3dqMi3pXfyomGmsaRGoA8dUJO/preview",
+    app_url: "https://vtuberdule-pink.vercel.app",
+    document: ""
   },
   {
     title: "もぐらたたきゲーム",
@@ -40,7 +44,9 @@ const projects = [
     technologies: ["Python","MediaPipe","Pygame"],
     link: "https://github.com/hato72/Mediapipe-Game",
     type: "個人開発",
-    video:"https://drive.google.com/file/d/18pTfchcrfAdixSi72pzEjDutpbIWeYhg/preview"
+    video:"https://drive.google.com/file/d/18pTfchcrfAdixSi72pzEjDutpbIWeYhg/preview",
+    app_url: "",
+    document: ""
   },
   {
     title: "常磐線の電車案内システムの開発",
@@ -48,7 +54,9 @@ const projects = [
     technologies: ["Java"],
     link: "https://github.com/hato72/IS_project",
     type: "チーム開発",
-    video:""
+    video:"",
+    app_url: "",
+    document: "https://drive.google.com/drive/folders/1YeVvB-6sDhFREbYYxg-0CYhF_Gt_E0zL?usp=drive_link"
   },
   {
     title: "Difyを用いて作成した検索アプリ",
@@ -56,7 +64,9 @@ const projects = [
     technologies: ["TypeScript","Next.js", "Dify","Python","GCP(Cloud run)","Docker"],
     link: "https://github.com/hato72/dify_search",
     type: "個人開発",
-    video:"https://drive.google.com/file/d/1FhKKspxUaf-lco0a6IYF8SgpLXcYosOM/preview"
+    video:"https://drive.google.com/file/d/1FhKKspxUaf-lco0a6IYF8SgpLXcYosOM/preview",
+    app_url: "https://dify-search.vercel.app",
+    document: ""
   },
   {
     title: "へらでんくん",
@@ -64,7 +74,9 @@ const projects = [
     technologies: ["TypeScript","React","Dify","Python","Flask"],
     link: "https://github.com/hato72/heradenkun",
     type: "チーム開発",
-    video:"https://drive.google.com/file/d/1soLL6KKTv8nc0W3l6fdCyCmh0JkbqBHo/preview"
+    video:"https://drive.google.com/file/d/1soLL6KKTv8nc0W3l6fdCyCmh0JkbqBHo/preview",
+    app_url: "",
+    document: ""
   },
   {
     title: "cookjump",
@@ -72,7 +84,9 @@ const projects = [
     technologies: ["TypeScript","Next.js"],
     link: "https://github.com/hato72/cookjump",
     type: "チーム開発",
-    video:"https://drive.google.com/file/d/1L4nHrayoPp5JeOiPg7KZ-R7rvHR_2TkJ/preview"
+    video:"https://drive.google.com/file/d/1L4nHrayoPp5JeOiPg7KZ-R7rvHR_2TkJ/preview",
+    app_url: "",
+    document: ""
   },
   {
     title: "動画から姿勢推定を行うアプリ",
@@ -80,7 +94,9 @@ const projects = [
     technologies: ["TypeScript","Next.js","Python","MediaPipe"],
     link: "https://github.com/hato72/pose_Analysis_video",
     type: "個人開発",
-    video:""
+    video:"https://drive.google.com/file/d/1v8bIrPetpdQz5Qy7pTu9VzusCiccDQvv/view?usp=drive_link",
+    app_url: "",
+    document: ""
   },
   {
     title: "2Dタイルベースゲーム",
@@ -88,7 +104,9 @@ const projects = [
     technologies: ["Java"],
     link: "https://github.com/hato72/javafx2",
     type: "個人開発",
-    video:"https://drive.google.com/file/d/1wjMYWfZUTCqbHwFhcltI8PsbC8LUtzqY/preview"
+    video:"https://drive.google.com/file/d/1wjMYWfZUTCqbHwFhcltI8PsbC8LUtzqY/preview",
+    app_url: "",
+    document: ""
   },
   {
     title: "強化学習モデルの実装",
@@ -99,7 +117,9 @@ const projects = [
     video:[
       "https://drive.google.com/file/d/1KUhO2JENSPaeDNMcB72xQ8qwceGXkUzi/preview",//開始直後
       "https://drive.google.com/file/d/1vbHpFrw3FoEzSJcLdR2i7iKrKETi4vBs/preview"//一定時間経過後
-    ]
+    ],
+    app_url: "",
+    document: ""
   },
   {
     title: "スプラトゥーン3の武器ランダムDiscordbot",
@@ -107,7 +127,9 @@ const projects = [
     technologies: ["Python"],
     link: "https://github.com/hato72/Discordbot",
     type: "個人開発",
-    video:""
+    video:"",
+    app_url: "",
+    document: ""
   },
   {
     title: "Yatter",
@@ -115,15 +137,9 @@ const projects = [
     technologies: ["Kotlin"],
     link: "https://github.com/hato72/Yatter2024-Internship",
     type: "個人開発",
-    video:"https://drive.google.com/file/d/1ah2nDrvkwYEBAwMfBFA0zlVgMo8YutYC/preview"
-  },
-  {
-    title: "顔認証システム",
-    description: "顔認証を用いたユーザー登録/ログイン機能を実装したシステム",
-    technologies: ["Python","Next.js"],
-    link: "https://github.com/hato72/face_recognition",
-    type: "個人開発",
-    video:""
+    video:"https://drive.google.com/file/d/1ah2nDrvkwYEBAwMfBFA0zlVgMo8YutYC/preview",
+    app_url: "",
+    document: ""
   },
   {
     title: "2Dゲーム風ポートフォリオ",
@@ -131,8 +147,20 @@ const projects = [
     technologies: ["JavaScript"],
     link: "https://github.com/hato72/portfolio_game",
     type: "個人開発",
-    video:""
+    video:"",
+    app_url: "https://portfolio-game-two.vercel.app",
+    document: ""
   },
+  {
+    title: "陸上短距離走選手のための姿勢推定技術を用いたコーチングシステムの開発",
+    description: "研究において行ったシステムの開発(詳細は研究欄)",
+    technologies: ["Python"],
+    link: "https://github.com/hato72/simple-HRNet",
+    type: "研究活動",
+    video:"",
+    app_url: "",
+    document: "https://drive.google.com/file/d/1Jmi1VMNIgFkRcKe2j3ulD93MiaokAee6/view?usp=drive_link"
+  }
 ]
 
 export default function Projects() {
@@ -196,7 +224,7 @@ export default function Projects() {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter>
+              {/* <CardFooter>
                 <>
                   <Button asChild className="w-full rounded-full group relative overflow-hidden">
                     <motion.a 
@@ -231,7 +259,110 @@ export default function Projects() {
                     </motion.a>
                   </Button>
                   )}
+                  {project.app_url && (
+                    <Button asChild className="w-full rounded-full group relative overflow-hidden mt-2">
+                      <motion.a 
+                        href={project.app_url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="relative z-10"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        アプリを見る
+                        <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                      </motion.a>
+                    </Button>
+                  )}
+                  {project.document && (
+                    <Button asChild className="w-full rounded-full group relative overflow-hidden mt-2">
+                      <motion.a 
+                        href={project.document} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="relative z-10"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        資料を見る
+                        <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                      </motion.a>
+                    </Button>
+                  )}
                 </>
+              </CardFooter> */}
+              <CardFooter>
+                <div className="flex flex-col gap-2">
+                  <Button asChild className="w-full rounded-full group relative overflow-hidden px-32">
+                    <motion.a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="relative z-10"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      GitHubを見る
+                      <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                    </motion.a>
+                  </Button>
+                  {project.video && (
+                    <Button asChild className="w-full rounded-full group relative overflow-hidden px-32">
+                      <motion.a
+                        onClick={() =>
+                          setOpenDialogs((prev) => {
+                            const next = [...prev];
+                            next[index] = !next[index];
+                            return next;
+                          })
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="relative z-10"
+                      >
+                        デモ動画を見る
+                        <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                      </motion.a>
+                    </Button>
+                  )}
+                  {project.app_url && (
+                    <Button asChild className="w-full rounded-full group relative overflow-hidden px-32">
+                      <motion.a
+                        href={project.app_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="relative z-10"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        アプリを見る
+                        <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                      </motion.a>
+                    </Button>
+                  )}
+                  {project.document && (
+                    <Button asChild className="w-full rounded-full group relative overflow-hidden px-32">
+                      <motion.a
+                        href={project.document}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="relative z-10"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        資料を見る
+                        <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                      </motion.a>
+                    </Button>
+                  )}
+                </div>
               </CardFooter>
               <AnimatePresence>
                 {hoveredIndex === index && (

@@ -17,7 +17,7 @@ const skills = [
   { 
     name: "Python", 
     level: 4,
-    years: 2.8,
+    years: 3,
     experience: "API開発(Flask、Django)、データ分析、機械学習（Pytorch、TensorFlowなど）、強化学習(Q学習)、Webスクレイピング(BeautifulSoup)",
     projects: "姿勢推定を用いた研究活動、Difyを使用したアプリケーション、Mediapipe-Game、強化学習AI"
   },
