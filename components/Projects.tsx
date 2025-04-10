@@ -294,7 +294,7 @@ export default function Projects() {
                 </>
               </CardFooter> */}
               <CardFooter>
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 w-full">
                   <Button asChild className="w-full rounded-full group relative overflow-hidden px-32">
                     <motion.a
                       href={project.link}
