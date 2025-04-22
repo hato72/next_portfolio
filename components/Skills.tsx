@@ -23,7 +23,7 @@ const skills = [
   },
   { 
     name: "Go", 
-    level: 5,
+    level: 4,
     years: 1,
     experience: "バックエンドAPIの開発(Gin、Echo)、クリーンアーキテクチャ",
     projects: "CookMeet、インターンシップでの開発、Vtuberduleのバックエンド(進行中)"
@@ -72,7 +72,7 @@ const skills = [
   },
   { 
     name: "Docker", 
-    level: 5,
+    level: 4,
     years: 1,
     experience: "コンテナ化、Docker Compose",
     projects: "CookMeet、インターンシップでの開発"
@@ -141,8 +141,7 @@ export default function Skills() {
                 level === 1 ? "授業などで触ったことがある" :
                 level === 2 ? "参考書やWeb等のリファレンスがあれば使用できる" :
                 level === 3 ? "参考書やWeb等のリファレンスがなくても使用できる" :
-                level === 4 ? "実務に近いレベルで使用できる" :
-                "実際に実務で使用した経験がある"
+                "実務に近いレベルで使用できる、もしくは実務で実際に使用したことがある"
               }
             </p>
           </div>
