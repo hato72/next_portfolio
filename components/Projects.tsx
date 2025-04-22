@@ -18,7 +18,7 @@ const projects = [
   {
     title: "CookMeet",
     description: "簡単な質問に答えていくと、AIが答えに合ったレシピをおすすめしてくれるアプリ",
-    technologies: ["TypeScript", "Next.js", "Go","Docker","Supabase","PostgreSQL"],
+    technologies: ["TypeScript", "Next.js", "Go","Docker","Supabase","PostgreSQL","GCP"],
     link: "https://github.com/hato72/CookMeet",
     type: "チーム開発",
     video:[

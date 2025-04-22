@@ -22,18 +22,18 @@ const skills = [
     projects: "姿勢推定を用いた研究活動、Difyを使用したアプリケーション、Mediapipe-Game、強化学習AI"
   },
   { 
+    name: "Go", 
+    level: 5,
+    years: 1,
+    experience: "バックエンドAPIの開発(Gin、Echo)、クリーンアーキテクチャ",
+    projects: "CookMeet、インターンシップでの開発、Vtuberduleのバックエンド(進行中)"
+  },
+  { 
     name: "TypeScript", 
-    level: 3,
+    level: 4,
     years: 0.8,
     experience: "Webアプリケーションのフロントエンド実装、フレームワーク（Next.js、React、Vue.js、Node.js）",
     projects: "Vtuberdule、CookMeet、Difyを使用したWebアプリ、へらでんくん、cookjump"
-  },
-  { 
-    name: "Go", 
-    level: 3,
-    years: 1,
-    experience: "バックエンドAPIの開発(Gin、Echo)、クリーンアーキテクチャ",
-    projects: "CookMeet"
   },
   { 
     name: "Java", 
@@ -65,24 +65,31 @@ const skills = [
   },
   { 
     name: "SQL", 
-    level: 3,
+    level: 4,
     years: 0.5,
     experience: "CRUD操作、データベース設計",
-    projects: "CookMeet"
+    projects: "CookMeet、インターンシップでの開発"
   },
   { 
     name: "Docker", 
-    level: 3,
+    level: 5,
     years: 1,
     experience: "コンテナ化、Docker Compose",
-    projects: "CookMeet"
+    projects: "CookMeet、インターンシップでの開発"
   },
   { 
     name: "AWS", 
     level: 2,
     years: 0.1,
     experience: "Lambda、API Gateway、Secret Manager、SAM、AuroraDB",
-    projects: "インターンシップ"
+    projects: "インターンシップでの開発"
+  },
+  { 
+    name: "GCP", 
+    level: 2,
+    years: 0.2,
+    experience: "Cloud Run、Cloud Build、Cloud Storage、Secret Manager",
+    projects: "CookMeet"
   }
 ]
 
@@ -134,7 +141,8 @@ export default function Skills() {
                 level === 1 ? "授業などで触ったことがある" :
                 level === 2 ? "参考書やWeb等のリファレンスがあれば使用できる" :
                 level === 3 ? "参考書やWeb等のリファレンスがなくても使用できる" :
-                "実務に近いレベルで使用できる"
+                level === 4 ? "実務に近いレベルで使用できる" :
+                "実際に実務で使用した経験がある"
               }
             </p>
           </div>
