@@ -18,8 +18,8 @@ const skills = [
     name: "Python", 
     level: 4,
     years: 3,
-    experience: "API開発(Flask、Django)、データ分析、機械学習（Pytorch、TensorFlowなど）、強化学習(Q学習)、Webスクレイピング(BeautifulSoup)",
-    projects: "姿勢推定を用いた研究活動、Difyを使用したアプリケーション、Mediapipe-Game、強化学習AI"
+    experience: "API開発(Flask、Django)、データ分析・機械学習（Pytorch、TensorFlowなど）、強化学習(Q学習)、画像認識(Yolo、Mediapipe、HRNet(OSS)、OpenCV)",
+    projects: "姿勢推定を用いた研究活動、Mediapipe-Game、強化学習AI"
   },
   { 
     name: "Go", 
@@ -29,11 +29,11 @@ const skills = [
     projects: "CookMeet、インターンシップでの開発、Vtuberduleのバックエンド(進行中)"
   },
   { 
-    name: "TypeScript", 
+    name: "TypeScript/JavaScript", 
     level: 4,
-    years: 0.8,
-    experience: "Webアプリケーションのフロントエンド実装、フレームワーク（Next.js、React、Vue.js、Node.js）",
-    projects: "Vtuberdule、CookMeet、Difyを使用したWebアプリ、へらでんくん、cookjump"
+    years: 1,
+    experience: "Webアプリケーションのフロントエンド実装（Next.js、React、Vue.js）、Webアプリケーションのバックエンド実装（Node.js）、Lighthouseを用いたパフォーマンスチューニング",
+    projects: "Vtuberdule、CookMeet、へらでんくん、cookjump"
   },
   { 
     name: "Java", 
@@ -67,7 +67,7 @@ const skills = [
     name: "SQL", 
     level: 4,
     years: 0.5,
-    experience: "CRUD操作、データベース設計",
+    experience: "CRUD操作、データベース設計、PostgreSQL、MySQL、SQLite",
     projects: "CookMeet、インターンシップでの開発"
   },
   { 
@@ -90,6 +90,27 @@ const skills = [
     years: 0.2,
     experience: "Cloud Run、Cloud Build、Cloud Storage、Secret Manager",
     projects: "CookMeet"
+  },
+  {
+    name: "Git/GitHub/GitHub Actions", 
+    level: 4,
+    years: 2.5,
+    experience: "バージョン管理、CI/CD",
+    projects: "all"
+  },
+  {
+    name: "Figma", 
+    level: 3,
+    years: 0.3,
+    experience: "UI/UX設計",
+    projects: "CookMeet、開発アルバイト"
+  },
+  {
+    name: "API設計・DB設計", 
+    level: 3,
+    years: 0.3,
+    experience: "API設計、DB設計",
+    projects: "CookMeet、インターンシップでの開発"
   }
 ]
 

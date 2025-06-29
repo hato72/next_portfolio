@@ -18,12 +18,12 @@ const projects = [
   {
     title: "CookMeet",
     description: "簡単な質問に答えていくと、AIが答えに合ったレシピをおすすめしてくれるアプリ",
+    detail: "ユーザーがいくつかの簡単な質問に答えることで、生成AIによってユーザーに最適なレシピが提案されるアプリである。作ったレシピは写真を撮って保存することもできるようになっている。バックエンド実装の際はクリーンアーキテクチャを意識した設計を行い、テストコードも実装しGithub Actionsで自動テストとデプロイの設計を行っている。",
     technologies: ["TypeScript", "Next.js", "Go","Docker","Supabase","PostgreSQL","GCP"],
     link: "https://github.com/hato72/CookMeet",
     type: "チーム開発",
     video:[
-      "https://drive.google.com/file/d/1L8JsU_FcsA0JaRtv5tkti12rG_ly9EEe/preview",//AI推論以外
-      "https://drive.google.com/file/d/1SjmfFs9iQ_2A-BEr94Wnj4JVdCtln6xa/preview"//AI推論
+      "https://drive.google.com/file/d/16XizWOFHoByUQlU92FDLvNihm2YOXuTK/preview"
     ],
     app_url: "https://cook-meet.vercel.app",
     document:""
@@ -31,6 +31,7 @@ const projects = [
   {
     title: "Vtuberdule",
     description: "Vtuberの配信状況や配信予定を一覧で見れるアプリ",
+    detail: "YoutubeからVtuber に関する配信情報のみを取得して表示していることにより、リアルタイムでの配信状況や配信スケジュール確認、配信の検索などを行うことができるアプリである。また、ログインをすることでVtuberのお気に入り登録を行うこともできるようになっている。Vtuberの配信情報取得には非公式APIのHolodexAPIを使用している。",
     technologies: ["TypeScript", "Next.js"],
     link: "https://github.com/hato72/Vtuberdule",
     type: "個人開発",
@@ -41,6 +42,7 @@ const projects = [
   {
     title: "もぐらたたきゲーム",
     description: "姿勢推定ライブラリであるMediapipeとPythonのゲームライブラリであるPygameを使用して作成したもぐらたたきゲーム",
+    detail: "PCのカメラに手を映して動かすとゲーム上のハンマーが連動して動き、もぐらを攻撃できるもぐらたたきゲームである。カメラの前で手を握るとハンマーを振ることができるため、手を動かしてモグラの位置までハンマーを動かし、タイミングよく手を握ることで攻撃することができる。",
     technologies: ["Python","MediaPipe","Pygame"],
     link: "https://github.com/hato72/Mediapipe-Game",
     type: "個人開発",
@@ -50,7 +52,8 @@ const projects = [
   },
   {
     title: "常磐線の電車案内システムの開発",
-    description: "出発時間や到着時間、駅名を入力すると常磐線内で最も効率的な経路が提示されるGUIアプリ",
+    description: "出発時間や到着時間、駅名を入力すると常磐線内の経路が提示されるGUIアプリ",
+    detail: "所謂Yahoo!乗換案内アプリの路線情報を首都圏の常磐線に限定し、GUIとして実装したようなシステムである。出発時間や到着時間、駅名を入力すると待ち時間ができるだけ少なくなるような効率的な経路が提示される。",
     technologies: ["Java"],
     link: "https://github.com/hato72/IS_project",
     type: "チーム開発",
@@ -71,6 +74,7 @@ const projects = [
   {
     title: "へらでんくん",
     description: "家庭の電力消費量や電気代をリアルタイムに監視するWebアプリ",
+    detail: "昨今の電気料金高騰に着目し、各家電ごとの消費電力量や電気料金を表示する機能や、Difyを用いてAIによる電力節約の提案を表示する機能を実装している。Difyでは電気使用状況をもとにGoogle検索を行い、検索結果・解決策を生成AIで要約して返すワークフローを構築している。",
     technologies: ["TypeScript","React","Dify","Python","Flask"],
     link: "https://github.com/hato72/heradenkun",
     type: "チーム開発",
@@ -91,6 +95,7 @@ const projects = [
   {
     title: "動画から姿勢推定を行うアプリ",
     description: "動画から姿勢推定を行い、姿勢の角度や脚の角度を可視化するアプリ",
+    detail: "動画から姿勢推定を行い、足の高さがプログラム上で設定した閾値を超えると足が上がったと判定する。そしてその足が地面につき、もう片方の足の高さが閾値より上になったら一歩と判定する。",
     technologies: ["TypeScript","Next.js","Python","MediaPipe"],
     link: "https://github.com/hato72/pose_Analysis_video",
     type: "個人開発",
@@ -101,6 +106,7 @@ const projects = [
   {
     title: "2Dタイルベースゲーム",
     description: "彦星をキーボード操作し、2Dタイル上の障害物を避けて織姫がいるゴールを目指すゲーム",
+    detail: "キーボード操作で彦星を動かし、障害物を避けて左から右にあるゴールを目指すゲームである。障害物は画面上部から下部へと等速直線運動している偽織姫と、タイル上に隠された落とし穴がある。",
     technologies: ["Java"],
     link: "https://github.com/hato72/javafx2",
     type: "個人開発",
@@ -110,7 +116,7 @@ const projects = [
   },
   {
     title: "強化学習モデルの実装",
-    description: "蛇ブロックが餌ブロックにたどり着くまでの最適な経路を学習していく強化学習モデル",
+    description: "蛇ブロックが餌ブロックにたどり着くまでの最適な経路を学習していく強化学習モデルの実装",
     technologies: ["Python","Pygame"],
     link: "https://github.com/hato72/python_ai",
     type: "個人開発",
@@ -118,16 +124,6 @@ const projects = [
       "https://drive.google.com/file/d/1KUhO2JENSPaeDNMcB72xQ8qwceGXkUzi/preview",//開始直後
       "https://drive.google.com/file/d/1vbHpFrw3FoEzSJcLdR2i7iKrKETi4vBs/preview"//一定時間経過後
     ],
-    app_url: "",
-    document: ""
-  },
-  {
-    title: "スプラトゥーン3の武器ランダムDiscordbot",
-    description: "スプラトゥーン3で大人数で武器をランダムにして遊ぶ際などに、それぞれにランダムな武器を割り当てることができるDiscordbot",
-    technologies: ["Python"],
-    link: "https://github.com/hato72/Discordbot",
-    type: "個人開発",
-    video:"",
     app_url: "",
     document: ""
   },
@@ -224,75 +220,6 @@ export default function Projects() {
                   ))}
                 </div>
               </CardContent>
-              {/* <CardFooter>
-                <>
-                  <Button asChild className="w-full rounded-full group relative overflow-hidden">
-                    <motion.a 
-                      href={project.link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="relative z-10"
-                      onClick={(e) => e.stopPropagation()} // クリックイベントの伝播を停止
-                    >
-                      GitHubを見る
-                      <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                    </motion.a>
-                  </Button>
-                  {project.video && (
-                    <Button asChild className="w-full rounded-full group relative overflow-hidden">
-                    <motion.a 
-                      onClick={() => setOpenDialogs(prev => {
-                        const next = [...prev];
-                        next[index] = !next[index];
-                        return next;
-                      })}
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="relative z-10"
-                    >
-                      デモ動画を見る
-                      <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                    </motion.a>
-                  </Button>
-                  )}
-                  {project.app_url && (
-                    <Button asChild className="w-full rounded-full group relative overflow-hidden mt-2">
-                      <motion.a 
-                        href={project.app_url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="relative z-10"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        アプリを見る
-                        <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                      </motion.a>
-                    </Button>
-                  )}
-                  {project.document && (
-                    <Button asChild className="w-full rounded-full group relative overflow-hidden mt-2">
-                      <motion.a 
-                        href={project.document} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                        className="relative z-10"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        資料を見る
-                        <span className="absolute inset-0 bg-primary-foreground opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                      </motion.a>
-                    </Button>
-                  )}
-                </>
-              </CardFooter> */}
               <CardFooter>
                 <div className="flex flex-col gap-2 w-full">
                   <Button asChild className="w-full rounded-full group relative overflow-hidden px-32">
@@ -385,6 +312,13 @@ export default function Projects() {
                 <DialogTitle>{project.title}</DialogTitle>
                 <DialogDescription>
                   {project.description}
+                  {project.detail && (
+                    <>
+                      <br />
+                      <span className="font-bold">詳細:</span>
+                      <div className="whitespace-pre-line mb-2">{project.detail}</div>
+                    </>
+                  )}
                   <br></br>
                   <a href={project.link} target="_blank" rel="noopener noreferrer">
                     プロジェクトへのリンク
